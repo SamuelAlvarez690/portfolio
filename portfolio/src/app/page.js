@@ -155,7 +155,7 @@ export default function Home() {
                 <input id="background" className="text-white text-3xl w-[80px] h-[25px]" value={bgInput} onChange={(e) => setBgInput(e.target.value)}></input>
               </div>
             </div>
-            <button style={{ background: activeBg }} className="text-white text-3xl w-[100px] h-[40px] rounded-lg hover:opacity-80" onClick={handleSubmit} >Apply</button>
+            <button style={{ color: activeFg, background: activeBg }} className="text-white text-3xl w-[100px] h-[40px] rounded-lg hover:opacity-80" onClick={handleSubmit} >Apply</button>
           </div>
           {error && <p className="text-white text-3xl px-[6px] mt-1 rounded-lg">{error}</p>}
           <ColorWheel themes={themes} setIndex={(i) => {
@@ -266,7 +266,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="text-white scroll-mt-35 h-screen">
+      <section id="contact" className="scroll-mt-35 h-screen">
         <div style={{ color: activeFg }} className="text-5xl font-bold ml-25 mt-[400px]">
             Contact Me
         </div>
@@ -278,10 +278,10 @@ export default function Home() {
             <input type="hidden" name="_captcha" value="True"/>
             <input type="hidden" name="_template" value="table"/>
 
-            <input className="px-[10px] mx-auto mb-[25px] outline-[3px] border-white rounded-lg" type="text" name="name" placeholder="Your Name" required></input>
-            <input className="px-[10px] mx-auto mb-[25px] outline-[3px] border-white rounded-lg" type="text" name="email" placeholder="Your Email" required></input>
-            <textarea className="px-[10px] mx-auto mb-[25px] h-[150px] outline-[3px] border-white rounded-lg" name="message" placeholder="Your Message" required></textarea>
-            <button style={{ background: activeBg }} className="mx-auto w-full rounded-lg hover:opacity-80" type="submit">Send</button>
+            <input className="text-white px-[10px] mx-auto mb-[25px] outline-[3px] border-white rounded-lg" type="text" name="name" placeholder="Your Name" required></input>
+            <input className="text-white px-[10px] mx-auto mb-[25px] outline-[3px] border-white rounded-lg" type="text" name="email" placeholder="Your Email" required></input>
+            <textarea className="text-white px-[10px] mx-auto mb-[25px] h-[150px] outline-[3px] border-white rounded-lg" name="message" placeholder="Your Message" required></textarea>
+            <button style={{ color: activeFg, background: activeBg }} className="mx-auto w-full rounded-lg hover:opacity-80" type="submit">Send</button>
           </form>
         </div>
       </section>
