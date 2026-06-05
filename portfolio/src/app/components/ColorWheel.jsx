@@ -11,7 +11,7 @@ export default function ColorWheel({ themes, setIndex, handleRandom }) {
     const x2 = 20 + 18 * Math.cos(endAngle)
     const y2 = 20 + 18 * Math.sin(endAngle)
 
-    const d = `M20, 20 L${x1},${y1} A18,18 0 0,1 ${x2},${y2} Z`
+    const d = `M20,20 L${x1},${y1} A18,18 0 0,1 ${x2},${y2} Z`
 
     return (
       <path

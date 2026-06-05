@@ -58,6 +58,12 @@ export default function Home() {
     setBgInput(savedBg ?? themes[savedIndex].bg)
     setError('')
   }, [])
+
+  useEffect(() => {
+    setFgInput(activeFg)
+    setBgInput(activeBg)
+    setError('')
+  }, [activeFg, activeBg])
  
 
   useEffect(() => {
@@ -113,10 +119,6 @@ export default function Home() {
       setRandomFg(fgInput)
       setRandomBg(bgInput)
     }
-
-      setError('')
-      setFgInput(activeFg)
-      setBgInput(activeBg)
   }
 
   return (
@@ -261,7 +263,7 @@ export default function Home() {
               </div>
               <a href="https://github.com/SamuelAlvarez690/ShipNGo" target="_blank" className="text-3xl flex items-center gap-[8px] w-[120px] px-[10px] mx-[40px] outline-[3px] border-white rounded-lg"><i className="devicon-github-original"></i>GitHub</a>
             </div>
-            <img src="/ShipNGo_Application.png" className="rounded-tr-lg rounded-br-lg"></img>
+            <img src="/ShipNGo_Application.png" className="w-[487px] rounded-tr-lg rounded-br-lg"></img>
           </div>
         </div>
       </section>
