@@ -19,9 +19,12 @@
   }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  background: white;
   color: var(--foreground);
   overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font--dongle), Arial, Helvetica, sans-serif;
 }

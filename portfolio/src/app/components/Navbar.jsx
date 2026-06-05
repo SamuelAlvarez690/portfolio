@@ -1,8 +1,8 @@
 import React from "react";
 
-const Navbar = () => {
+export default function Navbar({ navColor}) {
   return (
-    <nav className="bg-[#AAC4F5] text-[white] font-[Caslon] text-2xl font-bold w-full h-15 fixed top-0 left-0 flex flex-row justify-between items-center px-20">
+    <nav style={{ background: navColor }} className="text-[white] text-4xl font-bold w-full h-14 fixed top-0 left-0 flex flex-row justify-between items-center px-10">
       <div>
         <a href="#name" className="">
           Sam Alvarez
@@ -21,12 +21,14 @@ const Navbar = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="/Resume_Samuel_Alvarez_2025.pdf" target="_blank">Resume</a>
+            <a href="#contact">Contact Me</a>
           </li>
-        </ul>
+          <li>
+            <a href="/Samuel_Alvarez.pdf" target="_blank">Resume</a>
+          </li>
+        </ul> 
       </div>
     </nav>
   );
 };
 
-export default Navbar;
