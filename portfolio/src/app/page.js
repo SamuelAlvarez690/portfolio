@@ -139,7 +139,7 @@ export default function Home() {
           <div className="text-5xl flex gap-[14px] mt-3">
             <a href="https://github.com/SamuelAlvarez690" target="_blank"><i className="devicon-github-original"></i></a>
             <a href="https://www.linkedin.com/in/samuel-alvarez-4a9606240/" target="_blank"><i className="devicon-linkedin-plain"></i></a>
-            <a href="mailto:samuelralvarez2004@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"><path d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"/></svg></a>
+            <a style={{ fill: activeFg}} href="mailto:samuelralvarez2004@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"><path d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"/></svg></a>
           </div>
         </div>
         <div style={{ background: activeFg }} className="flex flex-col items-center mt-[150] mr-25 w-110 h-120 px-[20px] rounded-lg shadow-xl">
